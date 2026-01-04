@@ -173,7 +173,15 @@ export const Footer = () => {
             © {new Date().getFullYear()} Career Gram. All rights reserved.
           </p>
           <p className="text-sm text-primary-foreground/50">
-            Designed with ❤️ for your career success
+            Developed by{" "}
+            <a 
+              href="https://adwebcomicagency.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-accent hover:underline font-medium"
+            >
+              Ad Web Comic Agency
+            </a>
           </p>
         </div>
       </div>
