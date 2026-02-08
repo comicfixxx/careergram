@@ -244,3 +244,19 @@
 .animate-slide-in-right {
   animation: slideInRight 0.5s ease-out forwards;
 }
+
+@keyframes loaderBar {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-loader-bar {
+  animation: loaderBar 1.8s ease-in-out forwards;
+}
