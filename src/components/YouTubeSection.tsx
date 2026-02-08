@@ -65,8 +65,11 @@ export const YouTubeSection = () => {
               {/* Thumbnail placeholder */}
               <img 
                 src="/og-image.png" 
-                alt="Career Gram YouTube Channel"
+                alt="Career Gram YouTube Channel - Free career tips and interview preparation videos"
                 className="w-full h-full object-cover"
+                width={640}
+                height={360}
+                loading="lazy"
               />
               
               {/* Play button overlay */}

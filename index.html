@@ -42,7 +42,72 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg">
+      Skip to main content
+    </a>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Career Gram",
+      "url": "https://careergram.in/",
+      "logo": "https://careergram.in/favicon.jpg",
+      "description": "Expert career coaching in communication, interview preparation, and personal development by Josna Maria Babu.",
+      "founder": {
+        "@type": "Person",
+        "name": "Josna Maria Babu",
+        "jobTitle": "Career Coach & Interview Expert",
+        "image": "https://careergram.in/josna-profile.jpg"
+      },
+      "sameAs": [
+        "https://www.instagram.com/career_gram/",
+        "https://youtube.com/@josnamariababu"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "https://topmate.io/josna_maria_babu"
+      }
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is the 2-Month English Training for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This program is ideal for freshers, job seekers, and working professionals who want to improve their spoken English, build workplace communication skills, and gain confidence in professional settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I enroll in a program?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply click the Enroll Now or Join Bootcamp button on the respective program card. You'll be redirected to a Google Form where you can fill in your details. Our team will reach out to you within 24 hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the sessions conducted online or offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All sessions are conducted online via Zoom or Google Meet, making it convenient for participants from anywhere in the world to join."
+          }
+        }
+      ]
+    }
+    </script>
   </body>
 </html>
