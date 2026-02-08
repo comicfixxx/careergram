@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -57,6 +58,7 @@ export const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
+            <ThemeToggle />
             <Button 
               variant="accent" 
               size="default"
@@ -89,10 +91,11 @@ export const Header = () => {
                   {link.label}
                 </button>
               ))}
-              <div className="pt-3 mt-2 border-t border-border">
+              <div className="pt-3 mt-2 border-t border-border flex items-center gap-3">
+                <ThemeToggle />
                 <Button 
                   variant="accent" 
-                  className="w-full"
+                  className="flex-1"
                   onClick={() => window.open("https://topmate.io/josna_maria_babu", "_blank")}
                 >
                   Book 1:1 Call

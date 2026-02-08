@@ -9,11 +9,16 @@ import { Footer } from "@/components/Footer";
 import { LeadCapturePopup } from "@/components/LeadCapturePopup";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 import { DevToolsProtection } from "@/components/DevToolsProtection";
+import { ScrollProgressBar } from "@/components/ScrollProgressBar";
+import { BackToTopButton } from "@/components/BackToTopButton";
+import { PageLoader } from "@/components/PageLoader";
 
 const Index = () => {
   return (
     <>
+      <PageLoader />
       <DevToolsProtection />
+      <ScrollProgressBar />
       <Header />
       <main>
         <HeroSection />
@@ -26,6 +31,7 @@ const Index = () => {
       <Footer />
       <LeadCapturePopup />
       <WhatsAppWidget />
+      <BackToTopButton />
     </>
   );
 };
