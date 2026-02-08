@@ -55,8 +55,11 @@ export const LeadCapturePopup = () => {
 
   return (
     <div 
-      className="fixed inset-0 z-[10000] flex items-center justify-center bg-foreground/50 backdrop-blur-sm animate-fade-in p-4"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-foreground/50 backdrop-blur-sm animate-fade-in p-4"
       onClick={handleClose}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="lead-popup-title"
     >
       <div 
         className="bg-card rounded-2xl shadow-2xl w-full max-w-md p-6 md:p-8 relative animate-scale-in"
@@ -73,7 +76,7 @@ export const LeadCapturePopup = () => {
 
         {/* Header */}
         <div className="text-center mb-6">
-          <h2 className="text-2xl font-bold text-foreground mb-2">Get Your Free Quote</h2>
+          <h2 id="lead-popup-title" className="text-2xl font-bold text-foreground mb-2">Get Your Free Quote</h2>
           <p className="text-muted-foreground text-sm">Leave your details and we'll contact you soon</p>
         </div>
 

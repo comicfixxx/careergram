@@ -19,6 +19,9 @@ export const AboutSection = () => {
                 src="/josna-profile.jpg" 
                 alt="Josna Maria Babu - Interview Prep & Career Coach"
                 className="w-full aspect-[4/5] object-cover"
+                width={600}
+                height={750}
+                loading="lazy"
               />
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />

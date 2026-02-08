@@ -86,6 +86,9 @@ export const HeroSection = () => {
                   src="/josna-profile.jpg" 
                   alt="Josna Maria Babu - Career Coach & Interview Expert"
                   className="w-full h-full object-cover"
+                  width={384}
+                  height={384}
+                  loading="eager"
                 />
               </div>
 

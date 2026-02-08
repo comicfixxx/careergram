@@ -9,6 +9,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "YouTube", href: "#youtube" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 export const Header = () => {

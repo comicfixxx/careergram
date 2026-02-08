@@ -20,7 +20,7 @@ const Index = () => {
       <DevToolsProtection />
       <ScrollProgressBar />
       <Header />
-      <main>
+      <main id="main-content">
         <HeroSection />
         <ServicesSection />
         <AboutSection />
